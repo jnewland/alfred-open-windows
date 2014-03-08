@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>417EDFE4-EEA3-4586-BACB-72B5CD1488FA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>window</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	set appName to (path to frontmost application as text)
+	set processName to name of my application appName
+	tell application "System Events"
+		tell process processName
+			click menu item q of menu 1 of menu bar item "Window" of menu bar 1
+		end tell
+	end tell
+end alfred_script
+</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>window</string>
+				<key>script</key>
+				<string>bash filter.sh "{query}" </string>
+				<key>subtext</key>
+				<string>search by window name</string>
+				<key>title</key>
+				<string>switch windows</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>417EDFE4-EEA3-4586-BACB-72B5CD1488FA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>417EDFE4-EEA3-4586-BACB-72B5CD1488FA</key>
+		<dict>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
