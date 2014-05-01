@@ -16,6 +16,6 @@ To invoke, type `windows` into Alfred, then type in a search phrase matching one
 
 ## Configuring a Keyboard shortcut
 
-To configure a keyboard shortcut to immediately jump to the window search (I use `cmd+shift_space`), double click the 'Hotkey' icon in the Alfred workflow:
+To configure a keyboard shortcut to immediately jump to the window search (I use `cmd+shift+space`), double click the 'Hotkey' icon in the Alfred workflow:
 
 ![skitched-20140501-103948](https://cloud.githubusercontent.com/assets/47/2855013/98b374e0-d157-11e3-8e97-365ea2c3de9a.jpg)
