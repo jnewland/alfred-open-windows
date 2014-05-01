@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>open-windows</string>
+	<string>jnewland/alfred-open-windows</string>
 	<key>connections</key>
 	<dict>
 		<key>257F5972-9163-4FA8-B16B-60FF082AFD5A</key>
@@ -137,6 +137,6 @@ end alfred_script
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/jnewland/alfred-open-windows</string>
 </dict>
 </plist>
