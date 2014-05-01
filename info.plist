@@ -3,9 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>open-windows</string>
 	<key>connections</key>
 	<dict>
+		<key>257F5972-9163-4FA8-B16B-60FF082AFD5A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>417EDFE4-EEA3-4586-BACB-72B5CD1488FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>417EDFE4-EEA3-4586-BACB-72B5CD1488FA</key>
 		<array>
 			<dict>
@@ -19,15 +30,40 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Jesse Newland</string>
 	<key>description</key>
-	<string></string>
+	<string>Switch windows of the currently running app</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>window</string>
+	<string>Open windows</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>hotkey</key>
+				<integer>49</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>Space</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>257F5972-9163-4FA8-B16B-60FF082AFD5A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -84,6 +120,11 @@ end alfred_script
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>257F5972-9163-4FA8-B16B-60FF082AFD5A</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
 		<key>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</key>
 		<dict>
 			<key>ypos</key>
