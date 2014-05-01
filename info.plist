@@ -96,7 +96,7 @@ end alfred_script
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>window</string>
+				<string>windows</string>
 				<key>script</key>
 				<string>bash filter.sh "{query}" </string>
 				<key>subtext</key>
