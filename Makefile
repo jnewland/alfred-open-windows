@@ -1,5 +1,5 @@
 open-windows.alfredworkflow:
-	@zip open-windows.alfredworkflow info.plist filter.sh windows.ascr
+	@zip open-windows.alfredworkflow *.plist *.sh *.ascr
 	@echo "zip file created, importing"
 	@open open-windows.alfredworkflow
 

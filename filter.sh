@@ -1,8 +1,8 @@
 #!/bin/bash
-STAMP=$(date +%s)
 FILTER="$1"
 if [ -z "$FILTER" ]; then FILTER=.;fi
 echo '<?xml version="1.0"?><items>'
+APPLICATION=$(osascript -sh application.ascr | cut -f 2- -d : | cut -f -2 -d : | tr ":" "/")
 
 osascript -sh windows.ascr | tr "\r" "\n" | while read LINE; do
     if [ "$LINE" = "" ]; then
@@ -17,9 +17,10 @@ osascript -sh windows.ascr | tr "\r" "\n" | while read LINE; do
           continue
         fi
     fi
-    echo "<item uid=\"${STAMP}\" arg=\"${LINE}\">"
-    echo "<title>${LINE}</title>"
-    echo "<subtitle>Open this window</subtitle>"
+    echo "<item arg=\"${LINE}\">"
+    echo "  <title>${LINE}</title>"
+    echo "  <subtitle>Switch to this window</subtitle>"
+    echo "  <icon type=\"fileicon\">/${APPLICATION}</icon>"
     echo "</item>"
 done
 
