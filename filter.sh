@@ -11,7 +11,7 @@ osascript -sh windows.ascr | tr "\r" "\n" | while read LINE; do
     if [ "$FILTER" = "" ]; then
         continue
     else
-        if echo $LINE | grep -sq $FILTER; then
+        if echo $LINE | grep -sqi $FILTER; then
           true
         else
           continue
