@@ -127,7 +127,7 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>0</integer>
 				<key>script</key>
 				<string>bash alfred-open-windows-switch.sh "{query}"</string>
 				<key>scriptargtype</key>
