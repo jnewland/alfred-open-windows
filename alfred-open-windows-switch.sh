@@ -1,3 +1,3 @@
 #!/bin/bash
-exec 1> >(logger -s -t $(basename $0)) 2>&1
+exec 2> >(logger -s -t $(basename $0))
 osascript -sh switch.ascr "$focusedapp" "$1"
