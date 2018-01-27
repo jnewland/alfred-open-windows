@@ -15,17 +15,21 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>417EDFE4-EEA3-4586-BACB-72B5CD1488FA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</string>
+				<string>351E60D0-E59C-4FA7-8A15-904205F036D3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -46,6 +50,10 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>3</integer>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>49</integer>
 				<key>hotmod</key>
@@ -56,49 +64,47 @@
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>257F5972-9163-4FA8-B16B-60FF082AFD5A</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	set appName to (path to frontmost application as text)
-	set processName to name of my application appName
-	tell application "System Events"
-		tell process processName
-			click menu item q of menu 1 of menu bar item "Window" of menu bar 1
-		end tell
-	end tell
-end alfred_script
-</string>
-				<key>cachescript</key>
+				<key>alfredfiltersresults</key>
 				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
 				<string>windows</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
 				<key>script</key>
-				<string>bash filter.sh "{query}" </string>
+				<string>bash alfred-open-windows-filter.sh "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>search by window name</string>
 				<key>title</key>
@@ -113,7 +119,30 @@ end alfred_script
 			<key>uid</key>
 			<string>417EDFE4-EEA3-4586-BACB-72B5CD1488FA</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>bash alfred-open-windows-switch.sh "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>351E60D0-E59C-4FA7-8A15-904205F036D3</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -122,16 +151,22 @@ end alfred_script
 	<dict>
 		<key>257F5972-9163-4FA8-B16B-60FF082AFD5A</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>2C2B5ADC-50D0-4495-AFB6-C05077291E5B</key>
+		<key>351E60D0-E59C-4FA7-8A15-904205F036D3</key>
 		<dict>
+			<key>xpos</key>
+			<integer>600</integer>
 			<key>ypos</key>
-			<real>50</real>
+			<integer>180</integer>
 		</dict>
 		<key>417EDFE4-EEA3-4586-BACB-72B5CD1488FA</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>170</real>
 		</dict>

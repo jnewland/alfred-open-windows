@@ -1,11 +1,12 @@
-set output to ""
-set theapp to (path to frontmost application as text)
-tell application theapp
-	set mywindowlist to the name of every window whose visible is true
-end tell
-
-
-repeat with n in mywindowlist
-	set output to output & n & return
-end repeat
-return output
+on run argv
+	set appId to item 1 of argv
+	set output to ""
+	set processName to name of my application id appId
+	tell application processName
+		set mywindowlist to the name of every window whose visible is true
+	end tell
+	repeat with n in mywindowlist
+		set output to output & n & return
+	end repeat
+	return output
+end run

@@ -1,1 +1,4 @@
-return (path to frontmost application as text)
+on run argv
+  set appName to item 1 of argv
+  return (path to application id appName as text)
+end run

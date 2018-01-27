@@ -1,0 +1,10 @@
+on run argv
+  set appName to item 1 of argv
+  set q to item 2 of argv
+  set processName to name of my application appName
+  tell application "System Events"
+    tell process processName
+      click menu item q of menu 1 of menu bar item "Window" of menu bar 1
+    end tell
+  end tell
+end run
