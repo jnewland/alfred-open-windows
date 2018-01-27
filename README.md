@@ -13,6 +13,14 @@ A simple extension to switch between open windows of an application with Alfred.
 
 ## Setup
 
+### Granting Alfred Accessibility Access
+
+In order for Alfred to list the open windows for an application for your text snippets, it must be granted Accessibility access in your Mac's Security & Privacy preferences, under Accessibility.
+
+Click the plus icon, and then add Alfred 3. When you're done, it should look like this:
+
+![image](https://user-images.githubusercontent.com/47/35474485-67bedf2c-0354-11e8-8897-3b9dbe8d6da0.png)
+
 ### Configuring a Keyboard shortcut
 
 Double click the 'Hotkey' icon in the Alfred workflow to set a keyboard shortcut:
