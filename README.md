@@ -21,3 +21,7 @@ Double click the 'Hotkey' icon in the Alfred workflow to set a keyboard shortcut
 ## Usage
 
  Press the keyboard shortcut you entered above, and then type in a search phrase matching one of your open windows. Pressing enter will switch to this window.
+
+## Debugging
+
+    sudo tail -f /var/log/system.log | grep alfred-open-windows
