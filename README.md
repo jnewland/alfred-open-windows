@@ -10,12 +10,14 @@ A simple extension to switch between open windows of an application with Alfred.
     cd alfred-open-windows
     make
 
-## Usage
+## Setup
 
-To invoke, type `windows` into Alfred, then type in a search phrase matching one of your open windows. Pressing enter will switch to this window.
+### Configuring a Keyboard shortcut
 
-## Configuring a Keyboard shortcut
-
-To configure a keyboard shortcut to immediately jump to the window search (I use `cmd+shift+space`), double click the 'Hotkey' icon in the Alfred workflow:
+Double click the 'Hotkey' icon in the Alfred workflow to set a keyboard shortcut:
 
 ![skitched-20140501-103948](https://cloud.githubusercontent.com/assets/47/2855013/98b374e0-d157-11e3-8e97-365ea2c3de9a.jpg)
+
+## Usage
+
+ Press the keyboard shortcut you entered above, and then type in a search phrase matching one of your open windows. Pressing enter will switch to this window.
