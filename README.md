@@ -6,8 +6,8 @@ A simple extension to switch between open windows of an application with Alfred.
 
 ## Installation
 
-    wget https://github.com/jnewland/alfred-open-windows/archive/v0.0.1.zip
-    unzip v0.0.1.zip
+    wget https://github.com/jnewland/alfred-open-windows/archive/v0.0.2.zip
+    unzip v0.0.2.zip
     cd alfred-open-windows
     make
 
