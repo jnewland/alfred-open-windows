@@ -78,7 +78,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttrimmode</key>
@@ -98,7 +98,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>bash alfred-open-windows-list.sh</string>
+				<string>bash alfred-open-windows-filter.sh "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
